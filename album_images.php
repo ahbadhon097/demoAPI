@@ -22,7 +22,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
             if(uploadImage($img, 5000000, "./images/", $fileName));
             {
-                $sql="INSERT INTO package_main_images (imag_name) VALUES ('$fileName')";
+                $sql="INSERT INTO album_images (image_name) VALUES ('$fileName')";
 
                 if($db->query($sql))
                 {
